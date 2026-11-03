@@ -1,0 +1,23 @@
+seed = 5
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/regression-num-medium-0-Ailerons"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_estimators = 4000
+num_leaves = 58
+learning_rate = 0.005870464517106817
+colsample_bytree = 0.5366968062461082
+subsample = 0.9673010153647313
+reg_lambda = 4.359555471936468
+min_child_samples = 90
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

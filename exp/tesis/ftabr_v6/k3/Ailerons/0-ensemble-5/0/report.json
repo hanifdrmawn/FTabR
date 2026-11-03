@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "data": ":data/regression-num-medium-0-Ailerons",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.0002239142363032183,
+            "mae": 0.00016945773694034688,
+            "r2": 0.7054187059402466,
+            "score": -0.0002239142363032183
+        },
+        "val": {
+            "rmse": 0.0002123833008163326,
+            "mae": 0.00016406998577018356,
+            "r2": 0.6949543952941895,
+            "score": -0.0002123833008163326
+        },
+        "test": {
+            "rmse": 0.00021771793368875826,
+            "mae": 0.0001682379480885468,
+            "r2": 0.7055184245109558,
+            "score": -0.00021771793368875826
+        }
+    }
+}

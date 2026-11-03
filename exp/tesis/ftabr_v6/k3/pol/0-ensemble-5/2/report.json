@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "data": ":data/regression-num-medium-0-pol",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 33.476553610333134,
+            "mae": 21.720696811186826,
+            "r2": 0.34908729791641235,
+            "score": -33.476553610333134
+        },
+        "val": {
+            "rmse": 38.64694338539034,
+            "mae": 27.596369986470563,
+            "r2": 0.16174113750457764,
+            "score": -38.64694338539034
+        },
+        "test": {
+            "rmse": 38.25684302760416,
+            "mae": 26.99300287026381,
+            "r2": 0.17635589838027954,
+            "score": -38.25684302760416
+        }
+    }
+}

@@ -1,0 +1,22 @@
+seed = 7
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-wine_quality"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_d = 8
+n_a = 45
+n_steps = 4
+gamma = 1.3910127193337458
+momentum = 0.22350637788021238
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

@@ -1,0 +1,66 @@
+{
+    "function": "bin.tabr_kmeans_v4.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 3060"
+    ],
+    "config": {
+        "seed": 13,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": Infinity,
+        "context_size": 96,
+        "data": {
+            "seed": 0,
+            "cache": true,
+            "path": ":data/regression-num-medium-0-superconduct",
+            "num_policy": "quantile",
+            "cat_policy": null,
+            "y_policy": "standard"
+        },
+        "model": {
+            "num_clusters": 8,
+            "num_embeddings": null,
+            "d_main": 228,
+            "context_dropout": 0.4990407551544037,
+            "d_multiplier": 2.0,
+            "encoder_n_blocks": 0,
+            "predictor_n_blocks": 1,
+            "mixer_normalization": "auto",
+            "dropout0": 0.45887603572755026,
+            "dropout1": 0.0,
+            "normalization": "LayerNorm",
+            "activation": "Sigmoid"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0009484694180303706,
+            "weight_decay": 0.0
+        }
+    },
+    "n_parameters": 489061,
+    "prediction_type": null,
+    "best_epoch": 121,
+    "metrics": {
+        "train": {
+            "rmse": 8.933936440261867,
+            "mae": 5.857216999427806,
+            "r2": 0.9324792623519897,
+            "score": -8.933936440261867
+        },
+        "val": {
+            "rmse": 14.269057540967953,
+            "mae": 9.940873005194021,
+            "r2": 0.8251214623451233,
+            "score": -14.269057540967953
+        },
+        "test": {
+            "rmse": 14.374209990017611,
+            "mae": 9.965008572437227,
+            "r2": 0.8227986693382263,
+            "score": -14.374209990017611
+        }
+    },
+    "time": "0:01:06.975773",
+    "chunk_size": null,
+    "eval_batch_size": 32768
+}

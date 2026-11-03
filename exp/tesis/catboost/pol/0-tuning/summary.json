@@ -1,0 +1,19 @@
+{
+    "function": "bin.tune.main",
+    "best": {
+        "function": "bin.catboost_.main",
+        "gpus": [
+            "NVIDIA L40"
+        ],
+        "tuning_time": "16:02:49.791423",
+        "trial_id": 84,
+        "scores": {
+            "train": -2.7967715377827025,
+            "val": -4.217533736140175,
+            "test": -4.1404038021693
+        },
+        "time": "0:28:44.968432"
+    },
+    "n_completed_trials": 100,
+    "time": "22:24:36.296807"
+}

@@ -1,0 +1,54 @@
+{
+    "function": "bin.tabnet_.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 11,
+        "data": {
+            "seed": 0,
+            "cache": true,
+            "path": ":data/regression-num-medium-0-superconduct",
+            "num_policy": "quantile",
+            "cat_policy": null,
+            "y_policy": "standard"
+        },
+        "model": {
+            "n_d": 59,
+            "n_a": 29,
+            "n_steps": 3,
+            "gamma": 1.0082694365855702,
+            "momentum": 0.08178267163643829,
+            "mask_type": "sparsemax"
+        },
+        "fit": {
+            "max_epochs": 200,
+            "patience": 16,
+            "batch_size": 1024
+        }
+    },
+    "prediction_type": null,
+    "time": "0:02:28.429307",
+    "total_inference_time": 0.8139796257019043,
+    "metrics": {
+        "train": {
+            "rmse": 10.587234375416283,
+            "mae": 7.007114115807099,
+            "r2": 0.9051764011383057,
+            "score": -10.587234375416283
+        },
+        "val": {
+            "rmse": 11.761127404627315,
+            "mae": 7.657818947762792,
+            "r2": 0.8811925053596497,
+            "score": -11.761127404627315
+        },
+        "test": {
+            "rmse": 12.146098294029297,
+            "mae": 7.870584398797973,
+            "r2": 0.8734760880470276,
+            "score": -12.146098294029297
+        }
+    },
+    "n_parameters": 166650
+}

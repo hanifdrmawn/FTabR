@@ -1,0 +1,23 @@
+seed = 10
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-medium-0-bank-marketing"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_estimators = 4000
+num_leaves = 195
+learning_rate = 0.0029533703154998934
+colsample_bytree = 0.5536776602910582
+subsample = 0.7389628147800178
+reg_lambda = 0.0
+min_child_samples = 10
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

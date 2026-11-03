@@ -1,0 +1,107 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.tabr_kmeans_v4.main",
+    "data": ":data/classif-num-medium-0-credit",
+    "prediction_type": "probs",
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7853009259259259,
+                "recall": 0.8090222575516693,
+                "f1-score": 0.7969851213782302,
+                "support": 5032.0
+            },
+            "1": {
+                "precision": 0.8004568106312292,
+                "recall": 0.7759661835748792,
+                "f1-score": 0.7880212591986917,
+                "support": 4968.0
+            },
+            "accuracy": 0.7926,
+            "macro avg": {
+                "precision": 0.7928788682785776,
+                "recall": 0.7924942205632743,
+                "f1-score": 0.792503190288461,
+                "support": 10000.0
+            },
+            "weighted avg": {
+                "precision": 0.7928303694475206,
+                "recall": 0.7926,
+                "f1-score": 0.7925318746474355,
+                "support": 10000.0
+            },
+            "cross-entropy": 0.448548107457665,
+            "roc-auc": 0.8719303742681299,
+            "score": 0.7926
+        },
+        "val": {
+            "0": {
+                "precision": 0.7809430255402751,
+                "recall": 0.8014112903225806,
+                "f1-score": 0.7910447761194029,
+                "support": 992.0
+            },
+            "1": {
+                "precision": 0.8022088353413654,
+                "recall": 0.7818003913894325,
+                "f1-score": 0.7918731417244796,
+                "support": 1022.0
+            },
+            "accuracy": 0.791459781529295,
+            "macro avg": {
+                "precision": 0.7915759304408203,
+                "recall": 0.7916058408560065,
+                "f1-score": 0.7914589589219413,
+                "support": 2014.0
+            },
+            "weighted avg": {
+                "precision": 0.7917343153201729,
+                "recall": 0.791459781529295,
+                "f1-score": 0.7914651284770933,
+                "support": 2014.0
+            },
+            "cross-entropy": 0.46422484659286234,
+            "roc-auc": 0.863179407865665,
+            "score": 0.791459781529295
+        },
+        "test": {
+            "0": {
+                "precision": 0.7577128753599341,
+                "recall": 0.7895413630518645,
+                "f1-score": 0.7732997481108312,
+                "support": 2333.0
+            },
+            "1": {
+                "precision": 0.7836051123843103,
+                "recall": 0.7511618081960287,
+                "f1-score": 0.7670405522001725,
+                "support": 2367.0
+            },
+            "accuracy": 0.7702127659574468,
+            "macro avg": {
+                "precision": 0.7706589938721222,
+                "recall": 0.7703515856239467,
+                "f1-score": 0.7701701501555018,
+                "support": 4700.0
+            },
+            "weighted avg": {
+                "precision": 0.7707526466443381,
+                "recall": 0.7702127659574468,
+                "f1-score": 0.7701475105107186,
+                "support": 4700.0
+            },
+            "cross-entropy": 0.4813529896978086,
+            "roc-auc": 0.8508881678009044,
+            "score": 0.7702127659574468
+        }
+    }
+}

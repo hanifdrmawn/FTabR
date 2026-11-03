@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.xgboost_.main",
+    "data": ":data/regression-num-medium-0-wine_quality",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.09422882184909456,
+            "mae": 0.0660330936608089,
+            "r2": 0.9881964325904846,
+            "score": -0.09422882184909456
+        },
+        "val": {
+            "rmse": 0.6328936646850702,
+            "mae": 0.43291052896625004,
+            "r2": 0.5315819978713989,
+            "score": -0.6328936646850702
+        },
+        "test": {
+            "rmse": 0.6153471882490714,
+            "mae": 0.42615372760231374,
+            "r2": 0.4992603063583374,
+            "score": -0.6153471882490714
+        }
+    }
+}

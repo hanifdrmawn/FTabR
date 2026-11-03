@@ -1,0 +1,22 @@
+seed = 6
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-Ailerons"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_d = 29
+n_a = 15
+n_steps = 6
+gamma = 1.1080360542648162
+momentum = 0.1278201470409308
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

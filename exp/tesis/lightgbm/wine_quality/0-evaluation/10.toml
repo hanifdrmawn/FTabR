@@ -1,0 +1,23 @@
+seed = 10
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/regression-num-medium-0-wine_quality"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_estimators = 4000
+num_leaves = 145
+learning_rate = 0.02439942983722476
+colsample_bytree = 0.6476268096030475
+subsample = 0.7542379149517981
+reg_lambda = 5.841649798010551
+min_child_samples = 13
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

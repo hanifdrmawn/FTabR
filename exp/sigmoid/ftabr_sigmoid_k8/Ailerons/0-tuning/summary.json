@@ -1,0 +1,21 @@
+{
+    "function": "bin.tune.main",
+    "best": {
+        "function": "bin.tabr_kmeans_v4.main",
+        "gpus": [
+            "NVIDIA GeForce RTX 3060"
+        ],
+        "n_parameters": 437963,
+        "best_epoch": 69,
+        "tuning_time": "1:10:11.765588",
+        "trial_id": 70,
+        "scores": {
+            "train": -0.00014679554283068827,
+            "val": -0.00015930403857117355,
+            "test": -0.00016561251930905
+        },
+        "time": "0:00:40.175861"
+    },
+    "n_completed_trials": 100,
+    "time": "1:23:54.208279"
+}

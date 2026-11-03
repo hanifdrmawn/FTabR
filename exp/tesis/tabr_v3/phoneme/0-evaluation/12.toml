@@ -1,0 +1,31 @@
+seed = 12
+batch_size = 256
+patience = 16
+n_epochs = inf
+context_size = 96
+
+[data]
+seed = 0
+cache = true
+path = ":data/classif-num-medium-0-phoneme"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+num_embeddings = "__null__"
+d_main = 210
+context_dropout = 0.44579687350172426
+d_multiplier = 2.0
+encoder_n_blocks = 0
+predictor_n_blocks = 1
+mixer_normalization = "auto"
+dropout0 = 0.13535600943197218
+dropout1 = 0.0
+normalization = "LayerNorm"
+activation = "ReLU"
+
+[optimizer]
+type = "AdamW"
+lr = 9.513124444469437e-05
+weight_decay = 5.382238839247034e-06

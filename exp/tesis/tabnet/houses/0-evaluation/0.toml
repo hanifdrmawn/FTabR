@@ -1,0 +1,22 @@
+seed = 0
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-houses"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_d = 35
+n_a = 64
+n_steps = 4
+gamma = 1.1131996799905242
+momentum = 0.19981974385835596
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

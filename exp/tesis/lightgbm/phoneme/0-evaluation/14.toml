@@ -1,0 +1,23 @@
+seed = 14
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-medium-0-phoneme"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_estimators = 4000
+num_leaves = 76
+learning_rate = 0.007505850824379411
+colsample_bytree = 0.9160289463486955
+subsample = 0.7594923214302732
+reg_lambda = 0.0
+min_child_samples = 9
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

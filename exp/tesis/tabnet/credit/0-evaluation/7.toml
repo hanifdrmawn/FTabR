@@ -1,0 +1,22 @@
+seed = 7
+
+[data]
+seed = 0
+cache = true
+path = ":data/classif-num-medium-0-credit"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_d = 54
+n_a = 28
+n_steps = 8
+gamma = 1.1925052826027587
+momentum = 0.24554431308094116
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

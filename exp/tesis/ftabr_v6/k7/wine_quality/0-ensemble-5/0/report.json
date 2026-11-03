@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "data": ":data/regression-num-medium-0-wine_quality",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.6635902083307615,
+            "mae": 0.5142724929457856,
+            "r2": 0.41460955142974854,
+            "score": -0.6635902083307615
+        },
+        "val": {
+            "rmse": 1.0445016381196763,
+            "mae": 0.8366045769773471,
+            "r2": -0.27582287788391113,
+            "score": -1.0445016381196763
+        },
+        "test": {
+            "rmse": 0.9903634206511361,
+            "mae": 0.7889887007738601,
+            "r2": -0.2970620393753052,
+            "score": -0.9903634206511361
+        }
+    }
+}

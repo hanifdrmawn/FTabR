@@ -1,0 +1,28 @@
+seed = 8
+neighbors = "__null__"
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/regression-num-medium-0-pol"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+booster = "gbtree"
+n_estimators = 4000
+n_jobs = 1
+tree_method = "gpu_hist"
+use_label_encoder = false
+colsample_bytree = 0.9984595241441427
+gamma = 0
+lambda = 7.3477582868120415
+learning_rate = 0.018966055769199266
+max_depth = 13
+min_child_weight = 2.910197596595267
+subsample = 0.6645834712380932
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

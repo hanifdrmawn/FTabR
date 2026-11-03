@@ -1,0 +1,14 @@
+{
+    "function": "bin.tabr_kmeans_v4.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 3060"
+    ],
+    "n_parameters": 783511,
+    "best_epoch": 40,
+    "scores": {
+        "train": 0.8472972972972973,
+        "val": 0.8526315789473684,
+        "test": 0.823088455772114
+    },
+    "time": "0:00:08.927595"
+}

@@ -1,0 +1,32 @@
+seed = 12
+batch_size = 256
+patience = 16
+n_epochs = inf
+context_size = 96
+
+[data]
+seed = 0
+cache = true
+path = ":data/classif-num-large-0-jannis"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+num_clusters = 8
+num_embeddings = "__null__"
+d_main = 362
+context_dropout = 0.3786523968393074
+d_multiplier = 2.0
+encoder_n_blocks = 0
+predictor_n_blocks = 1
+mixer_normalization = "auto"
+dropout0 = 0.43961776730868285
+dropout1 = 0.0
+normalization = "LayerNorm"
+activation = "Sigmoid"
+
+[optimizer]
+type = "AdamW"
+lr = 0.0007501505026183834
+weight_decay = 1.8791093249616996e-05

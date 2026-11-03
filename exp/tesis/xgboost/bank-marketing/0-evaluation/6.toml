@@ -1,0 +1,28 @@
+seed = 6
+neighbors = "__null__"
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-medium-0-bank-marketing"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+booster = "gbtree"
+n_estimators = 4000
+n_jobs = 1
+tree_method = "gpu_hist"
+use_label_encoder = false
+colsample_bytree = 0.6271928846886613
+gamma = 0.00852805618415307
+lambda = 5.165494976446354
+learning_rate = 0.19815796656283044
+max_depth = 3
+min_child_weight = 0.0072768978607703596
+subsample = 0.6142493745513614
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

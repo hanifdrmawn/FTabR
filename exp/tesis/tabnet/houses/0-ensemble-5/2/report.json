@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.tabnet_.main",
+    "data": ":data/regression-num-medium-0-houses",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.2185548758041555,
+            "mae": 0.1570677887060299,
+            "r2": 0.851188063621521,
+            "score": -0.2185548758041555
+        },
+        "val": {
+            "rmse": 0.2521425124772659,
+            "mae": 0.17377942639628685,
+            "r2": 0.8106105923652649,
+            "score": -0.2521425124772659
+        },
+        "test": {
+            "rmse": 0.23601032675949352,
+            "mae": 0.1679667547950885,
+            "r2": 0.8274108171463013,
+            "score": -0.23601032675949352
+        }
+    }
+}

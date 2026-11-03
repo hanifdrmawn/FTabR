@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.lightgbm_.main",
+    "data": ":data/regression-num-medium-0-pol",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.21146199824613177,
+            "mae": 0.10998292564808923,
+            "r2": 0.9999740279683281,
+            "score": -0.21146199824613177
+        },
+        "val": {
+            "rmse": 3.939982043810069,
+            "mae": 1.6585892149621708,
+            "r2": 0.9912876300217024,
+            "score": -3.939982043810069
+        },
+        "test": {
+            "rmse": 3.8651263279524524,
+            "mae": 1.6291830468919637,
+            "r2": 0.9915928509764836,
+            "score": -3.8651263279524524
+        }
+    }
+}

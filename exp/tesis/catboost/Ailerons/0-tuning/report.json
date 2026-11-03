@@ -1,0 +1,122 @@
+{
+    "function": "bin.tune.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 0,
+        "function": "bin.catboost_.main",
+        "n_trials": 100,
+        "timeout": null,
+        "sampler": {
+            "n_startup_trials": 20
+        },
+        "space": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "num_policy": null,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-Ailerons",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "task_type": "GPU",
+                "iterations": 4000,
+                "learning_rate": [
+                    "_tune_",
+                    "loguniform",
+                    0.001,
+                    1.0
+                ],
+                "depth": [
+                    "_tune_",
+                    "int",
+                    3,
+                    10
+                ],
+                "l2_leaf_reg": [
+                    "_tune_",
+                    "loguniform",
+                    0.1,
+                    10.0
+                ],
+                "bagging_temperature": [
+                    "_tune_",
+                    "uniform",
+                    0.0,
+                    1.0
+                ],
+                "leaf_estimation_iterations": [
+                    "_tune_",
+                    "int",
+                    1,
+                    10
+                ]
+            },
+            "fit": {
+                "early_stopping_rounds": 200,
+                "verbose": false
+            }
+        }
+    },
+    "best": {
+        "function": "bin.catboost_.main",
+        "gpus": [
+            "NVIDIA L40"
+        ],
+        "config": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "num_policy": null,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-Ailerons",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "task_type": "GPU",
+                "iterations": 4000,
+                "learning_rate": 0.09257875511947941,
+                "depth": 9,
+                "l2_leaf_reg": 0.5538389881350606,
+                "bagging_temperature": 0.1851488934732655,
+                "leaf_estimation_iterations": 7
+            },
+            "fit": {
+                "early_stopping_rounds": 200,
+                "verbose": false
+            }
+        },
+        "prediction_type": null,
+        "time": "0:01:35.964393",
+        "best_iteration": 1078,
+        "metrics": {
+            "train": {
+                "rmse": 0.00012773287104194149,
+                "mae": 9.477480250513275e-05,
+                "r2": 0.9041378534405293,
+                "score": -0.00012773287104194149
+            },
+            "val": {
+                "rmse": 0.00015220559616347325,
+                "mae": 0.00011082633903944787,
+                "r2": 0.8433302264230599,
+                "score": -0.00015220559616347325
+            },
+            "test": {
+                "rmse": 0.00015526810206167044,
+                "mae": 0.00011191909106971015,
+                "r2": 0.8502267535657327,
+                "score": -0.00015526810206167044
+            }
+        },
+        "trial_id": 46,
+        "tuning_time": "0:55:34.402907",
+        "total_inference_time": 0.010468237102031708
+    },
+    "time": "2:56:15.529289",
+    "n_completed_trials": 100
+}

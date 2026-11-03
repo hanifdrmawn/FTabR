@@ -1,0 +1,28 @@
+seed = 9
+neighbors = "__null__"
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/regression-num-medium-0-Ailerons"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+booster = "gbtree"
+n_estimators = 4000
+n_jobs = 1
+tree_method = "gpu_hist"
+use_label_encoder = false
+colsample_bytree = 0.865675783978074
+gamma = 0
+lambda = 6.149951895435318
+learning_rate = 0.04708829047099823
+max_depth = 11
+min_child_weight = 61.504683329850415
+subsample = 0.7900447495752284
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

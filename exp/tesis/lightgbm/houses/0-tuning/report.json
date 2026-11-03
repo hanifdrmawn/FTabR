@@ -1,0 +1,134 @@
+{
+    "function": "bin.tune.main",
+    "gpus": [
+        "NVIDIA L40",
+        "NVIDIA L40",
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 0,
+        "function": "bin.lightgbm_.main",
+        "n_trials": 100,
+        "timeout": null,
+        "sampler": {
+            "n_startup_trials": 20
+        },
+        "space": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "num_policy": null,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-houses",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "n_estimators": 4000,
+                "num_leaves": [
+                    "_tune_",
+                    "int",
+                    20,
+                    300
+                ],
+                "learning_rate": [
+                    "_tune_",
+                    "loguniform",
+                    0.001,
+                    1.0
+                ],
+                "colsample_bytree": [
+                    "_tune_",
+                    "uniform",
+                    0.5,
+                    1.0
+                ],
+                "subsample": [
+                    "_tune_",
+                    "uniform",
+                    0.5,
+                    1.0
+                ],
+                "reg_lambda": [
+                    "_tune_",
+                    "?loguniform",
+                    0.0,
+                    0.1,
+                    10.0
+                ],
+                "min_child_samples": [
+                    "_tune_",
+                    "int",
+                    5,
+                    100
+                ],
+                "verbose": -1
+            },
+            "fit": {
+                "early_stopping_rounds": 200,
+                "verbose": false
+            }
+        }
+    },
+    "best": {
+        "function": "bin.lightgbm_.main",
+        "gpus": [
+            "NVIDIA L40",
+            "NVIDIA L40",
+            "NVIDIA L40"
+        ],
+        "config": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "num_policy": null,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-houses",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "n_estimators": 4000,
+                "num_leaves": 122,
+                "learning_rate": 0.044735538026853996,
+                "colsample_bytree": 0.6836076902002173,
+                "subsample": 0.5105293614188624,
+                "reg_lambda": 3.6015915481297003,
+                "min_child_samples": 28,
+                "verbose": -1
+            },
+            "fit": {
+                "early_stopping_rounds": 200,
+                "verbose": false
+            }
+        },
+        "prediction_type": null,
+        "time": "0:00:01.202818",
+        "best_iteration": 287,
+        "total_inference_time": 0.3025991916656494,
+        "metrics": {
+            "train": {
+                "rmse": 0.1223684843174698,
+                "mae": 0.08584510936279,
+                "r2": 0.953349536423803,
+                "score": -0.1223684843174698
+            },
+            "val": {
+                "rmse": 0.229893235650878,
+                "mae": 0.15572785637709316,
+                "r2": 0.8425596965797472,
+                "score": -0.229893235650878
+            },
+            "test": {
+                "rmse": 0.21759192710055558,
+                "mae": 0.15151792304882059,
+                "r2": 0.8532976506503452,
+                "score": -0.21759192710055558
+            }
+        },
+        "trial_id": 23,
+        "tuning_time": "0:03:49.165517"
+    },
+    "time": "0:13:02.394142",
+    "n_completed_trials": 100
+}

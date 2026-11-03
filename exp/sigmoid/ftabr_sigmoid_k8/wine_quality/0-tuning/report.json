@@ -1,0 +1,143 @@
+{
+    "function": "bin.tune.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 3060"
+    ],
+    "config": {
+        "seed": 0,
+        "function": "bin.tabr_kmeans_v4.main",
+        "n_trials": 100,
+        "timeout": null,
+        "sampler": {},
+        "space": {
+            "seed": 0,
+            "batch_size": 256,
+            "patience": 16,
+            "n_epochs": Infinity,
+            "context_size": 96,
+            "data": {
+                "seed": 0,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-wine_quality",
+                "num_policy": "quantile",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "num_clusters": 8,
+                "num_embeddings": null,
+                "d_main": [
+                    "_tune_",
+                    "int",
+                    96,
+                    384
+                ],
+                "context_dropout": [
+                    "_tune_",
+                    "uniform",
+                    0.0,
+                    0.6
+                ],
+                "d_multiplier": 2.0,
+                "encoder_n_blocks": 0,
+                "predictor_n_blocks": 1,
+                "mixer_normalization": "auto",
+                "dropout0": [
+                    "_tune_",
+                    "uniform",
+                    0.0,
+                    0.6
+                ],
+                "dropout1": 0.0,
+                "normalization": "LayerNorm",
+                "activation": "Sigmoid"
+            },
+            "optimizer": {
+                "type": "AdamW",
+                "lr": [
+                    "_tune_",
+                    "loguniform",
+                    3e-05,
+                    0.001
+                ],
+                "weight_decay": [
+                    "_tune_",
+                    "?loguniform",
+                    0.0,
+                    1e-06,
+                    0.0001
+                ]
+            }
+        }
+    },
+    "best": {
+        "function": "bin.tabr_kmeans_v4.main",
+        "gpus": [
+            "NVIDIA GeForce RTX 3060"
+        ],
+        "config": {
+            "seed": 0,
+            "batch_size": 256,
+            "patience": 16,
+            "n_epochs": Infinity,
+            "context_size": 96,
+            "data": {
+                "seed": 0,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-wine_quality",
+                "num_policy": "quantile",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "num_clusters": 8,
+                "num_embeddings": null,
+                "d_main": 368,
+                "context_dropout": 0.3368211106859902,
+                "d_multiplier": 2.0,
+                "encoder_n_blocks": 0,
+                "predictor_n_blocks": 1,
+                "mixer_normalization": "auto",
+                "dropout0": 0.2393960796045297,
+                "dropout1": 0.0,
+                "normalization": "LayerNorm",
+                "activation": "Sigmoid"
+            },
+            "optimizer": {
+                "type": "AdamW",
+                "lr": 0.00061479370518436,
+                "weight_decay": 9.986348812907777e-05
+            }
+        },
+        "n_parameters": 1228017,
+        "prediction_type": null,
+        "best_epoch": 124,
+        "metrics": {
+            "train": {
+                "rmse": 0.40712018457423066,
+                "mae": 0.31301180539952256,
+                "r2": 0.7796611785888672,
+                "score": -0.40712018457423066
+            },
+            "val": {
+                "rmse": 0.6929886676493439,
+                "mae": 0.5306996326608626,
+                "r2": 0.43840348720550537,
+                "score": -0.6929886676493439
+            },
+            "test": {
+                "rmse": 0.6882095776884013,
+                "mae": 0.5300502270356162,
+                "r2": 0.37365585565567017,
+                "score": -0.6882095776884013
+            }
+        },
+        "time": "0:00:42.025318",
+        "chunk_size": null,
+        "eval_batch_size": 32768,
+        "trial_id": 98,
+        "tuning_time": "0:47:56.207228"
+    },
+    "time": "0:48:27.810236",
+    "n_completed_trials": 100
+}

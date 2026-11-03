@@ -1,0 +1,120 @@
+{
+    "function": "bin.tune.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 0,
+        "function": "bin.tabnet_.main",
+        "n_trials": 50,
+        "timeout": null,
+        "sampler": {},
+        "space": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-wine_quality",
+                "num_policy": "quantile",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "n_d": [
+                    "_tune_",
+                    "int",
+                    8,
+                    64
+                ],
+                "n_a": [
+                    "_tune_",
+                    "int",
+                    8,
+                    64
+                ],
+                "n_steps": [
+                    "_tune_",
+                    "int",
+                    3,
+                    10
+                ],
+                "gamma": [
+                    "_tune_",
+                    "uniform",
+                    1.0,
+                    2.0
+                ],
+                "momentum": [
+                    "_tune_",
+                    "uniform",
+                    0.01,
+                    0.4
+                ],
+                "mask_type": "sparsemax"
+            },
+            "fit": {
+                "max_epochs": 200,
+                "patience": 16,
+                "batch_size": 1024
+            }
+        }
+    },
+    "best": {
+        "function": "bin.tabnet_.main",
+        "gpus": [
+            "NVIDIA L40"
+        ],
+        "config": {
+            "seed": 0,
+            "data": {
+                "seed": 0,
+                "cache": true,
+                "path": ":data/regression-num-medium-0-wine_quality",
+                "num_policy": "quantile",
+                "cat_policy": null,
+                "y_policy": "standard"
+            },
+            "model": {
+                "n_d": 8,
+                "n_a": 45,
+                "n_steps": 4,
+                "gamma": 1.3910127193337458,
+                "momentum": 0.22350637788021238,
+                "mask_type": "sparsemax"
+            },
+            "fit": {
+                "max_epochs": 200,
+                "patience": 16,
+                "batch_size": 1024
+            }
+        },
+        "prediction_type": null,
+        "time": "0:01:12.507003",
+        "total_inference_time": 0.19867181777954102,
+        "metrics": {
+            "train": {
+                "rmse": 0.6704047188918757,
+                "mae": 0.5224592842558096,
+                "r2": 0.4025248885154724,
+                "score": -0.6704047188918757
+            },
+            "val": {
+                "rmse": 0.7091928270782539,
+                "mae": 0.5539330726959477,
+                "r2": 0.41183286905288696,
+                "score": -0.7091928270782539
+            },
+            "test": {
+                "rmse": 0.7165626351384291,
+                "mae": 0.5625979489623703,
+                "r2": 0.3209841847419739,
+                "score": -0.7165626351384291
+            }
+        },
+        "n_parameters": 69324,
+        "trial_id": 17,
+        "tuning_time": "0:14:13.682413"
+    },
+    "time": "0:37:32.411847",
+    "n_completed_trials": 50
+}

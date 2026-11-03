@@ -1,0 +1,67 @@
+{
+    "function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 8,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": Infinity,
+        "context_size": 96,
+        "data": {
+            "seed": 0,
+            "cache": true,
+            "path": ":data/regression-num-medium-0-Ailerons",
+            "num_policy": "quantile",
+            "cat_policy": null,
+            "y_policy": "standard"
+        },
+        "model": {
+            "num_clusters": 5,
+            "num_embeddings": null,
+            "d_main": 228,
+            "context_dropout": 0.3835340601828493,
+            "d_multiplier": 2.0,
+            "encoder_n_blocks": 0,
+            "predictor_n_blocks": 1,
+            "mixer_normalization": "auto",
+            "dropout0": 0.33985052505951296,
+            "dropout1": 0.0,
+            "normalization": "LayerNorm",
+            "activation": "ReLU"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 6.866539922653397e-05,
+            "weight_decay": 0.0
+        }
+    },
+    "n_parameters": 478573,
+    "prediction_type": null,
+    "total_inference_time": 0.022891521453857422,
+    "best_epoch": 28,
+    "metrics": {
+        "train": {
+            "rmse": 0.00030118622308144345,
+            "mae": 0.0002473747774975471,
+            "r2": 0.46701866388320923,
+            "score": -0.00030118622308144345
+        },
+        "val": {
+            "rmse": 0.00027227802037244693,
+            "mae": 0.0002135966221532698,
+            "r2": 0.49864059686660767,
+            "score": -0.00027227802037244693
+        },
+        "test": {
+            "rmse": 0.00029272870459065315,
+            "mae": 0.00022630209824266168,
+            "r2": 0.4676462411880493,
+            "score": -0.00029272870459065315
+        }
+    },
+    "time": "0:02:07.347031",
+    "chunk_size": null,
+    "eval_batch_size": 32768
+}

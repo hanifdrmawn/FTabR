@@ -1,0 +1,23 @@
+seed = 3
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-medium-0-credit"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_estimators = 4000
+num_leaves = 110
+learning_rate = 0.019290272345707116
+colsample_bytree = 0.5667825393825601
+subsample = 0.6477341102533447
+reg_lambda = 3.6015915481297003
+min_child_samples = 92
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

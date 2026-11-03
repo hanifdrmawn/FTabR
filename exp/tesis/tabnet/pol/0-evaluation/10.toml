@@ -1,0 +1,22 @@
+seed = 10
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-pol"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_d = 32
+n_a = 46
+n_steps = 9
+gamma = 1.7396954671121385
+momentum = 0.29999768448265035
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

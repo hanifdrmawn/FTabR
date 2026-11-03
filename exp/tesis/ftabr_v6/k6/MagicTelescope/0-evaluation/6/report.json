@@ -1,0 +1,139 @@
+{
+    "function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 6,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": Infinity,
+        "context_size": 96,
+        "data": {
+            "seed": 0,
+            "cache": true,
+            "path": ":data/classif-num-medium-0-MagicTelescope",
+            "num_policy": "quantile",
+            "cat_policy": null,
+            "y_policy": null
+        },
+        "model": {
+            "num_clusters": 6,
+            "num_embeddings": null,
+            "d_main": 125,
+            "context_dropout": 0.4852147176259806,
+            "d_multiplier": 2.0,
+            "encoder_n_blocks": 0,
+            "predictor_n_blocks": 1,
+            "mixer_normalization": "auto",
+            "dropout0": 0.5201445975539528,
+            "dropout1": 0.0,
+            "normalization": "LayerNorm",
+            "activation": "ReLU"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 4.895661851056464e-05,
+            "weight_decay": 0.0
+        }
+    },
+    "n_parameters": 143626,
+    "prediction_type": "logits",
+    "total_inference_time": 0.0030205249786376953,
+    "best_epoch": 21,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7282999486389317,
+                "recall": 0.30080610946117947,
+                "f1-score": 0.425761897612971,
+                "support": 4714.0
+            },
+            "1": {
+                "precision": 0.5555555555555556,
+                "recall": 0.8862120886212088,
+                "f1-score": 0.6829672606713635,
+                "support": 4649.0
+            },
+            "accuracy": 0.5914770906760654,
+            "macro avg": {
+                "precision": 0.6419277520972436,
+                "recall": 0.5935090990411942,
+                "f1-score": 0.5543645791421672,
+                "support": 9363.0
+            },
+            "weighted avg": {
+                "precision": 0.6425273668334617,
+                "recall": 0.5914770906760654,
+                "f1-score": 0.5534717911148899,
+                "support": 9363.0
+            },
+            "cross-entropy": 0.6678900368735967,
+            "roc-auc": 0.7256938116444767,
+            "score": 0.5914770906760654
+        },
+        "val": {
+            "0": {
+                "precision": 0.7231329690346083,
+                "recall": 0.6833046471600689,
+                "f1-score": 0.7026548672566372,
+                "support": 581.0
+            },
+            "1": {
+                "precision": 0.7186544342507645,
+                "recall": 0.7556270096463023,
+                "f1-score": 0.7366771159874608,
+                "support": 622.0
+            },
+            "accuracy": 0.7206982543640897,
+            "macro avg": {
+                "precision": 0.7208937016426864,
+                "recall": 0.7194658284031856,
+                "f1-score": 0.7196659916220489,
+                "support": 1203.0
+            },
+            "weighted avg": {
+                "precision": 0.7208173841339011,
+                "recall": 0.7206982543640897,
+                "f1-score": 0.7202457556278528,
+                "support": 1203.0
+            },
+            "cross-entropy": 0.8387593517676397,
+            "roc-auc": 0.7383461268131782,
+            "score": 0.7206982543640897
+        },
+        "test": {
+            "0": {
+                "precision": 0.72265625,
+                "recall": 0.6640344580043073,
+                "f1-score": 0.6921062476618032,
+                "support": 1393.0
+            },
+            "1": {
+                "precision": 0.6941176470588235,
+                "recall": 0.7494707127734651,
+                "f1-score": 0.7207329487614523,
+                "support": 1417.0
+            },
+            "accuracy": 0.70711743772242,
+            "macro avg": {
+                "precision": 0.7083869485294118,
+                "recall": 0.7067525853888862,
+                "f1-score": 0.7064195982116277,
+                "support": 2810.0
+            },
+            "weighted avg": {
+                "precision": 0.7082650754919405,
+                "recall": 0.70711743772242,
+                "f1-score": 0.7065418474689928,
+                "support": 2810.0
+            },
+            "cross-entropy": 0.8989531902623364,
+            "roc-auc": 0.7244897235446313,
+            "score": 0.70711743772242
+        }
+    },
+    "time": "0:00:13.602673",
+    "chunk_size": null,
+    "eval_batch_size": 32768
+}

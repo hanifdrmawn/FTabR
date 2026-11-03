@@ -1,0 +1,55 @@
+seed = 0
+function = "bin.tabnet_.main"
+n_trials = 50
+timeout = "__null__"
+
+[sampler]
+
+[space]
+seed = 0
+
+[space.data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-superconduct"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[space.model]
+n_d = [
+    "_tune_",
+    "int",
+    8,
+    64,
+]
+n_a = [
+    "_tune_",
+    "int",
+    8,
+    64,
+]
+n_steps = [
+    "_tune_",
+    "int",
+    3,
+    10,
+]
+gamma = [
+    "_tune_",
+    "uniform",
+    1.0,
+    2.0,
+]
+momentum = [
+    "_tune_",
+    "uniform",
+    0.01,
+    0.4,
+]
+mask_type = "sparsemax"
+
+[space.fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

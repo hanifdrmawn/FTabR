@@ -1,0 +1,22 @@
+seed = 7
+
+[data]
+seed = 0
+cache = true
+path = ":data/classif-num-large-0-jannis"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_d = 21
+n_a = 51
+n_steps = 6
+gamma = 1.5826546090921654
+momentum = 0.027258638533579658
+mask_type = "sparsemax"
+
+[fit]
+max_epochs = 200
+patience = 16
+batch_size = 1024

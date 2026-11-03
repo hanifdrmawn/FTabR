@@ -1,0 +1,32 @@
+seed = 13
+batch_size = 256
+patience = 16
+n_epochs = inf
+context_size = 96
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-superconduct"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+num_clusters = 7
+num_embeddings = "__null__"
+d_main = 383
+context_dropout = 0.21456473133647325
+d_multiplier = 2.0
+encoder_n_blocks = 0
+predictor_n_blocks = 1
+mixer_normalization = "auto"
+dropout0 = 0.5213687864097739
+dropout1 = 0.0
+normalization = "LayerNorm"
+activation = "ReLU"
+
+[optimizer]
+type = "AdamW"
+lr = 0.00029927823041475736
+weight_decay = 0.0

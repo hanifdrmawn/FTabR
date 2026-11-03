@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.lightgbm_.main",
+    "data": ":data/regression-num-medium-0-superconduct",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 4.9084854033861065,
+            "mae": 2.755500889972117,
+            "r2": 0.979618016940046,
+            "score": -4.9084854033861065
+        },
+        "val": {
+            "rmse": 9.513422890768142,
+            "mae": 5.578910403801665,
+            "r2": 0.9222644787848245,
+            "score": -9.513422890768142
+        },
+        "test": {
+            "rmse": 10.15056369048898,
+            "mae": 5.686146921189612,
+            "r2": 0.9116352034677295,
+            "score": -10.15056369048898
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    },
+    "single_model_function": "bin.xgboost_.main",
+    "data": ":data/regression-num-medium-0-superconduct",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 4.922696765833869,
+            "mae": 2.696142154966765,
+            "r2": 0.9794998168945312,
+            "score": -4.922696765833869
+        },
+        "val": {
+            "rmse": 9.439419121516911,
+            "mae": 5.527916873549884,
+            "r2": 0.9234691858291626,
+            "score": -9.439419121516911
+        },
+        "test": {
+            "rmse": 10.142551129456704,
+            "mae": 5.671914145431572,
+            "r2": 0.9117746353149414,
+            "score": -10.142551129456704
+        }
+    }
+}

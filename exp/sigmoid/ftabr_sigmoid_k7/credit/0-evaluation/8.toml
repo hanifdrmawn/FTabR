@@ -1,0 +1,32 @@
+seed = 8
+batch_size = 256
+patience = 16
+n_epochs = inf
+context_size = 96
+
+[data]
+seed = 0
+cache = true
+path = ":data/classif-num-medium-0-credit"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+num_clusters = 7
+num_embeddings = "__null__"
+d_main = 257
+context_dropout = 0.1320631965331023
+d_multiplier = 2.0
+encoder_n_blocks = 0
+predictor_n_blocks = 1
+mixer_normalization = "auto"
+dropout0 = 0.10405580798636324
+dropout1 = 0.0
+normalization = "LayerNorm"
+activation = "Sigmoid"
+
+[optimizer]
+type = "AdamW"
+lr = 0.0006213786153820415
+weight_decay = 9.144534542426804e-06

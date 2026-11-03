@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.lightgbm_.main",
+    "data": ":data/regression-num-medium-0-houses",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.11893836795508743,
+            "mae": 0.08345764902925984,
+            "r2": 0.9559282037052496,
+            "score": -0.11893836795508743
+        },
+        "val": {
+            "rmse": 0.23176430336408185,
+            "mae": 0.15672382768050822,
+            "r2": 0.8399864999775953,
+            "score": -0.23176430336408185
+        },
+        "test": {
+            "rmse": 0.21822080026349974,
+            "mae": 0.15171166357925245,
+            "r2": 0.8524484418568226,
+            "score": -0.21822080026349974
+        }
+    }
+}

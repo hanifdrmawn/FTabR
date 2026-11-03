@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.tabr_kmeans_v4.main",
+    "data": ":data/regression-num-medium-0-houses",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.24723249378421075,
+            "mae": 0.17718725282085757,
+            "r2": 0.8095732927322388,
+            "score": -0.24723249378421075
+        },
+        "val": {
+            "rmse": 0.3238459202536517,
+            "mae": 0.24018023960698898,
+            "r2": 0.6875789165496826,
+            "score": -0.3238459202536517
+        },
+        "test": {
+            "rmse": 0.30218414520072673,
+            "mae": 0.22704848279934353,
+            "r2": 0.7170596718788147,
+            "score": -0.30218414520072673
+        }
+    }
+}

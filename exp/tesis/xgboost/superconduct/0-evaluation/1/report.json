@@ -1,0 +1,60 @@
+{
+    "function": "bin.xgboost_.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 1,
+        "data": {
+            "seed": 0,
+            "num_policy": null,
+            "cache": true,
+            "path": ":data/regression-num-medium-0-superconduct",
+            "cat_policy": null,
+            "y_policy": "standard"
+        },
+        "model": {
+            "booster": "gbtree",
+            "n_estimators": 4000,
+            "n_jobs": 1,
+            "tree_method": "gpu_hist",
+            "use_label_encoder": false,
+            "colsample_bytree": 0.5041251430952166,
+            "gamma": 0,
+            "lambda": 1.6313718912300366,
+            "learning_rate": 0.007147278005833535,
+            "max_depth": 14,
+            "min_child_weight": 9.984402010121629,
+            "subsample": 0.6205014573022979
+        },
+        "fit": {
+            "early_stopping_rounds": 200,
+            "verbose": false
+        },
+        "neighbors": null
+    },
+    "prediction_type": null,
+    "time": "0:00:11.743861",
+    "best_iteration": 1674,
+    "total_inference_time": 0.9143266677856445,
+    "metrics": {
+        "train": {
+            "rmse": 4.831183746816464,
+            "mae": 2.617864736509489,
+            "r2": 0.9802549481391907,
+            "score": -4.831183746816464
+        },
+        "val": {
+            "rmse": 9.461117345085066,
+            "mae": 5.5332916609824565,
+            "r2": 0.92311692237854,
+            "score": -9.461117345085066
+        },
+        "test": {
+            "rmse": 10.168918402676857,
+            "mae": 5.673830235889852,
+            "r2": 0.9113153219223022,
+            "score": -10.168918402676857
+        }
+    }
+}

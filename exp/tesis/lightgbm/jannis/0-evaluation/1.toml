@@ -1,0 +1,23 @@
+seed = 1
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-large-0-jannis"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+n_estimators = 4000
+num_leaves = 294
+learning_rate = 0.011197670895544999
+colsample_bytree = 0.7104654436875089
+subsample = 0.8178679618027626
+reg_lambda = 1.323501591335612
+min_child_samples = 12
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

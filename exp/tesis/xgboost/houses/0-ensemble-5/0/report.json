@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.xgboost_.main",
+    "data": ":data/regression-num-medium-0-houses",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.03395942535373557,
+            "mae": 0.025166109252237057,
+            "r2": 0.996407151222229,
+            "score": -0.03395942535373557
+        },
+        "val": {
+            "rmse": 0.23046127062522279,
+            "mae": 0.15448877849165044,
+            "r2": 0.8417806625366211,
+            "score": -0.23046127062522279
+        },
+        "test": {
+            "rmse": 0.21668588724138885,
+            "mae": 0.15040509378970413,
+            "r2": 0.8545168042182922,
+            "score": -0.21668588724138885
+        }
+    }
+}

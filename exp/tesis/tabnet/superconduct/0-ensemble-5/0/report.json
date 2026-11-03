@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "single_model_function": "bin.tabnet_.main",
+    "data": ":data/regression-num-medium-0-superconduct",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 9.057990843882171,
+            "mae": 5.935925282076369,
+            "r2": 0.9305911064147949,
+            "score": -9.057990843882171
+        },
+        "val": {
+            "rmse": 10.566242920100377,
+            "mae": 6.777392801187091,
+            "r2": 0.9041069746017456,
+            "score": -10.566242920100377
+        },
+        "test": {
+            "rmse": 11.003602174465964,
+            "mae": 6.975099010796953,
+            "r2": 0.8961590528488159,
+            "score": -11.003602174465964
+        }
+    }
+}

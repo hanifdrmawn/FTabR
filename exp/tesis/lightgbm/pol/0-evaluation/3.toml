@@ -1,0 +1,23 @@
+seed = 3
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/regression-num-medium-0-pol"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+n_estimators = 4000
+num_leaves = 187
+learning_rate = 0.025641096622612203
+colsample_bytree = 0.9998261029851817
+subsample = 0.886944769914383
+reg_lambda = 6.740255533804569
+min_child_samples = 7
+verbose = -1
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

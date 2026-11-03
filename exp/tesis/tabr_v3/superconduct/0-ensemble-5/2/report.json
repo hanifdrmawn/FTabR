@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.tabr_v3_inferenceTime.main",
+    "data": ":data/regression-num-medium-0-superconduct",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 7.886574403047304,
+            "mae": 4.8113784523190475,
+            "r2": 0.9473827481269836,
+            "score": -7.886574403047304
+        },
+        "val": {
+            "rmse": 9.662380710327612,
+            "mae": 5.7622531996266275,
+            "r2": 0.9198111295700073,
+            "score": -9.662380710327612
+        },
+        "test": {
+            "rmse": 10.498394194915564,
+            "mae": 6.019691223816949,
+            "r2": 0.9054754376411438,
+            "score": -10.498394194915564
+        }
+    }
+}

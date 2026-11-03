@@ -1,0 +1,28 @@
+seed = 1
+neighbors = "__null__"
+
+[data]
+seed = 0
+num_policy = "__null__"
+cache = true
+path = ":data/classif-num-large-0-jannis"
+cat_policy = "__null__"
+y_policy = "__null__"
+
+[model]
+booster = "gbtree"
+n_estimators = 4000
+n_jobs = 1
+tree_method = "gpu_hist"
+use_label_encoder = false
+colsample_bytree = 0.950802937455383
+gamma = 0.024026933028663034
+lambda = 0.8116567286389714
+learning_rate = 0.08655135377367965
+max_depth = 14
+min_child_weight = 1.76575803032996
+subsample = 0.8603840280951306
+
+[fit]
+early_stopping_rounds = 200
+verbose = false

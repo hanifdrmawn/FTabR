@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.lightgbm_.main",
+    "data": ":data/regression-num-medium-0-wine_quality",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 0.11738494275222247,
+            "mae": 0.08192294297932357,
+            "r2": 0.9816823198414911,
+            "score": -0.11738494275222247
+        },
+        "val": {
+            "rmse": 0.6350650798684916,
+            "mae": 0.43742272999407,
+            "r2": 0.5283622241659649,
+            "score": -0.6350650798684916
+        },
+        "test": {
+            "rmse": 0.6174631236402416,
+            "mae": 0.4314948129417447,
+            "r2": 0.49581069353842566,
+            "score": -0.6174631236402416
+        }
+    }
+}

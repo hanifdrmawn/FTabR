@@ -1,0 +1,35 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    },
+    "single_model_function": "bin.tabnet_.main",
+    "data": ":data/regression-num-medium-0-pol",
+    "prediction_type": null,
+    "metrics": {
+        "train": {
+            "rmse": 12.100435681361486,
+            "mae": 8.621509587459173,
+            "r2": 0.9149560928344727,
+            "score": -12.100435681361486
+        },
+        "val": {
+            "rmse": 12.5265584830997,
+            "mae": 9.020404174443456,
+            "r2": 0.9119333624839783,
+            "score": -12.5265584830997
+        },
+        "test": {
+            "rmse": 12.559162456859768,
+            "mae": 8.938082435211527,
+            "r2": 0.9112347960472107,
+            "score": -12.559162456859768
+        }
+    }
+}

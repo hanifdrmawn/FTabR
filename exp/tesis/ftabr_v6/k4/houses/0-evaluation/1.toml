@@ -1,0 +1,32 @@
+seed = 1
+batch_size = 256
+patience = 16
+n_epochs = inf
+context_size = 96
+
+[data]
+seed = 0
+cache = true
+path = ":data/regression-num-medium-0-houses"
+num_policy = "quantile"
+cat_policy = "__null__"
+y_policy = "standard"
+
+[model]
+num_clusters = 4
+num_embeddings = "__null__"
+d_main = 147
+context_dropout = 0.5624532434258825
+d_multiplier = 2.0
+encoder_n_blocks = 0
+predictor_n_blocks = 1
+mixer_normalization = "auto"
+dropout0 = 0.2576152321485605
+dropout1 = 0.0
+normalization = "LayerNorm"
+activation = "ReLU"
+
+[optimizer]
+type = "AdamW"
+lr = 4.2085249220923434e-05
+weight_decay = 1.0722445556281254e-06

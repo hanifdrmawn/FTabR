@@ -1,0 +1,15 @@
+{
+    "function": "bin.tabr_kmeans_v6_inferenceTime.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "n_parameters": 1250542,
+    "best_epoch": 13,
+    "total_inference_time": 0.019332408905029297,
+    "scores": {
+        "train": 0.8310425246861509,
+        "val": 0.7610961018911617,
+        "test": 0.7535560701290109
+    },
+    "time": "0:00:55.974613"
+}

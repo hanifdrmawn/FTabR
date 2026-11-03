@@ -1,0 +1,126 @@
+{
+    "function": "bin.tabnet_.main",
+    "gpus": [
+        "NVIDIA L40"
+    ],
+    "config": {
+        "seed": 14,
+        "data": {
+            "seed": 0,
+            "cache": true,
+            "path": ":data/classif-num-medium-0-credit",
+            "num_policy": "quantile",
+            "cat_policy": null,
+            "y_policy": null
+        },
+        "model": {
+            "n_d": 54,
+            "n_a": 28,
+            "n_steps": 8,
+            "gamma": 1.1925052826027587,
+            "momentum": 0.24554431308094116,
+            "mask_type": "sparsemax"
+        },
+        "fit": {
+            "max_epochs": 200,
+            "patience": 16,
+            "batch_size": 1024
+        }
+    },
+    "prediction_type": "probs",
+    "time": "0:01:26.053706",
+    "total_inference_time": 0.5670702457427979,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7547067342505431,
+                "recall": 0.8284976152623211,
+                "f1-score": 0.7898825312618416,
+                "support": 5032.0
+            },
+            "1": {
+                "precision": 0.8071939231456657,
+                "recall": 0.7272544283413849,
+                "f1-score": 0.765141889030072,
+                "support": 4968.0
+            },
+            "accuracy": 0.7782,
+            "macro avg": {
+                "precision": 0.7809503286981044,
+                "recall": 0.777876021801853,
+                "f1-score": 0.7775122101459568,
+                "support": 10000.0
+            },
+            "weighted avg": {
+                "precision": 0.7807823696936401,
+                "recall": 0.7782,
+                "f1-score": 0.7775913802010984,
+                "support": 10000.0
+            },
+            "cross-entropy": 0.47331604921799164,
+            "roc-auc": 0.8566179870727504,
+            "score": 0.7782
+        },
+        "val": {
+            "0": {
+                "precision": 0.75,
+                "recall": 0.8407258064516129,
+                "f1-score": 0.7927756653992395,
+                "support": 992.0
+            },
+            "1": {
+                "precision": 0.8248337028824834,
+                "recall": 0.7279843444227005,
+                "f1-score": 0.7733887733887734,
+                "support": 1022.0
+            },
+            "accuracy": 0.7835153922542205,
+            "macro avg": {
+                "precision": 0.7874168514412416,
+                "recall": 0.7843550754371567,
+                "f1-score": 0.7830822193940065,
+                "support": 2014.0
+            },
+            "weighted avg": {
+                "precision": 0.7879742027536732,
+                "recall": 0.7835153922542205,
+                "f1-score": 0.7829378284406018,
+                "support": 2014.0
+            },
+            "cross-entropy": 0.4687985723185822,
+            "roc-auc": 0.8625382709424911,
+            "score": 0.7835153922542205
+        },
+        "test": {
+            "0": {
+                "precision": 0.7300918836140888,
+                "recall": 0.8174024860694384,
+                "f1-score": 0.7712841253791709,
+                "support": 2333.0
+            },
+            "1": {
+                "precision": 0.7959770114942529,
+                "recall": 0.7021546261089987,
+                "f1-score": 0.7461279461279461,
+                "support": 2367.0
+            },
+            "accuracy": 0.7593617021276595,
+            "macro avg": {
+                "precision": 0.7630344475541708,
+                "recall": 0.7597785560892185,
+                "f1-score": 0.7587060357535584,
+                "support": 4700.0
+            },
+            "weighted avg": {
+                "precision": 0.7632727554635246,
+                "recall": 0.7593617021276595,
+                "f1-score": 0.758615045317969,
+                "support": 4700.0
+            },
+            "cross-entropy": 0.492402899631716,
+            "roc-auc": 0.8442578525159579,
+            "score": 0.7593617021276595
+        }
+    },
+    "n_parameters": 271508
+}
